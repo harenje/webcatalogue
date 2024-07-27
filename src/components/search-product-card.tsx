@@ -98,7 +98,7 @@ export function SearchProductCard({ searchTerm }: SearchProductCardProps) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Search Results for "{searchTerm}"</CardTitle>
+        <CardTitle>Search Results for &quot;{searchTerm}&quot;</CardTitle>
       </CardHeader>
       <CardContent>
         {total > 0 ? (
@@ -155,7 +155,7 @@ export function SearchProductCard({ searchTerm }: SearchProductCardProps) {
             </TableBody>
           </Table>
         ) : (
-          <div className="text-center py-4">No results found for "{searchTerm}"</div>
+          <div className="text-center py-4">No results found for &quot;{searchTerm}&quot;</div>
         )}
 
       </CardContent>
