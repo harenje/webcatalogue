@@ -20,7 +20,7 @@ export default function DockDemo() {
             </span>
             <Dock>
                 <DockIcon>
-                    <a href="mailto:someone@example.com"><Icons.email className="h-6 w-6" /></a>
+                    <a href="mailto:spiktor@gmail.com"><Icons.email className="h-6 w-6" /></a>
                 </DockIcon>
                 <DockIcon>
                     <a href="tel:+36304820070"><Icons.whatsapp className="h-6 w-6" /></a>
