@@ -23,7 +23,7 @@ export default function DockDemo() {
                     <a href="mailto:spiktor@gmail.com"><Icons.email className="h-6 w-6" /></a>
                 </DockIcon>
                 <DockIcon>
-                    <a href="tel:+36304820070"><Icons.whatsapp className="h-6 w-6" /></a>
+                    <a href="tel:+36309003731"><Icons.whatsapp className="h-6 w-6" /></a>
                 </DockIcon>
             </Dock>
             <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_200%,rgba(0,0,0,0.2),rgba(255,255,255,0))]" />
