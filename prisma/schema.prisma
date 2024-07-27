@@ -20,7 +20,18 @@ model Product {
   unit        String?
   unitPrice   Int?
   unitName    String?
+  updatedAt   DateTime @default(now())
+  createdAt   DateTime @default(now())
 
   @@index([productId], type: Hash)
   @@map("products")
+}
+
+model User {
+  id            Int @id @default(autoincrement())
+  userId        String @unique 
+  role          String
+
+  @@index([userId], type: Hash)
+  @@map("users")
 }

@@ -139,7 +139,8 @@ client.defineJob({
               "packageSize" = EXCLUDED."packageSize",
               "unit" = EXCLUDED."unit",
               "unitPrice" = EXCLUDED."unitPrice",
-              "unitName" = EXCLUDED."unitName";
+              "unitName" = EXCLUDED."unitName",
+              "updatedAt" = NOW();
         `;
         await io.logger.info(`Running query: ${query}`);
 

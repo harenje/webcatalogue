@@ -6,6 +6,7 @@ import { createClient } from "@/utils/supabase/client";
 import { Label } from "@radix-ui/react-label";
 import { FormEvent, useEffect, useRef, useState } from "react";
 
+
 export function UploadForm() {
   const [file, setFile] = useState<File | null>(null);
   const [name, setName] = useState<string>("");
@@ -61,7 +62,7 @@ export function UploadForm() {
             onChange={(e) => setName(e.target.value)}
           />
           <p className="text-sm text-muted-foreground">
-            This is the name of the file.
+            This is the name of the excel file.
           </p>
         </div>
 
@@ -72,7 +73,7 @@ export function UploadForm() {
             onChange={(e) => setFile(e.target.files?.[0] ?? null)}
             ref={fileInputRef}
           />
-          <p className="text-sm text-muted-foreground">The excel file.</p>
+          <p className="text-sm text-muted-foreground">Choose the excel file from computer.</p>
         </div>
         {/* <FormDescription>The excel file.</FormDescription> */}
         <Button type="submit">Submit</Button>

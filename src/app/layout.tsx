@@ -8,6 +8,9 @@ import { cn } from "@/lib/utils"
 import { ThemeProvider } from "@/components/theme-provider"
 import { SavedItemsProvider } from "@/contexts/SavedItemsContext"
 import { ReactNode } from "react"
+import { Toaster } from "@/components/ui/toaster"
+import { QueryClient } from '@tanstack/react-query'
+import { Providers } from "@/components/Providers"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -58,6 +61,7 @@ export const viewport: Viewport = {
   ],
 }
 
+
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -73,10 +77,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
           defaultTheme="dark"
           disableTransitionOnChange
         >
-          <SavedItemsProviderWrapper>
+           <Providers>
             {children}
-          </SavedItemsProviderWrapper>
+            <Toaster />
+          </Providers>
         </ThemeProvider>
+
       </body>
     </html>
   )
