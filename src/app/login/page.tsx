@@ -22,7 +22,6 @@ export default function Home() {
     startTransition(async () => {
       try {
         const result = await login(formData);
-        console.log("Login result:", result);
 
         if (result.error) {
           toast({
